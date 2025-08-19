@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@1,700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caslon-bold-italic {
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Ensure consistent top bar layout */
+.top-bar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.top-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+}
+
+/* Ensure navigation items stay in place */
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Bottom Wave Pattern */
+.bottom-wave-pattern {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  background-image: url('/blue_waves-removebg-preview (1).png');
+  background-repeat: repeat-x;
+  background-size: 400px auto;
+  background-position: center bottom;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+

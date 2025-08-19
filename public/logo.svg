@@ -1,0 +1,40 @@
+<svg width="200" height="120" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pipe Border -->
+  <path d="M20 20 L20 80 L180 80 L180 40 L160 40 L160 20 L20 20" 
+        fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Pipe Connectors -->
+  <rect x="18" y="18" width="4" height="4" fill="white" stroke="black" stroke-width="1"/>
+  <rect x="178" y="38" width="4" height="4" fill="white" stroke="black" stroke-width="1"/>
+  <rect x="158" y="18" width="4" height="4" fill="white" stroke="black" stroke-width="1"/>
+  <rect x="18" y="78" width="4" height="4" fill="white" stroke="black" stroke-width="1"/>
+  
+  <!-- Company Name -->
+  <text x="100" y="35" text-anchor="middle" font-family="serif" font-size="12" font-weight="bold" fill="#01B1AF">THE</text>
+  <text x="100" y="55" text-anchor="middle" font-family="serif" font-size="18" font-weight="bold" fill="#01B1AF">PLUMBING COMPANY</text>
+  
+  <!-- Service Text -->
+  <text x="100" y="70" text-anchor="middle" font-family="serif" font-size="10" font-style="italic" fill="#01B1AF">Professional Plumbing Service</text>
+  <text x="100" y="85" text-anchor="middle" font-family="serif" font-size="8" font-weight="bold" fill="#01B1AF">LICENSED & INSURED</text>
+  
+  <!-- Phone Number -->
+  <text x="100" y="105" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" font-style="italic" fill="#01B1AF">302 998-0938</text>
+  
+  <!-- Faucet -->
+  <g transform="translate(170, 25)">
+    <!-- Faucet Body -->
+    <rect x="0" y="0" width="8" height="20" fill="silver" stroke="black" stroke-width="1"/>
+    <!-- Faucet Handle -->
+    <circle cx="4" cy="8" r="3" fill="white" stroke="black" stroke-width="1"/>
+    <!-- Faucet Spout -->
+    <rect x="3" y="20" width="2" height="8" fill="silver" stroke="black" stroke-width="1"/>
+    <!-- Water Drops -->
+    <circle cx="4" cy="30" r="1.5" fill="#01B1AF"/>
+    <circle cx="4" cy="33" r="1.5" fill="#01B1AF"/>
+    <circle cx="4" cy="36" r="1.5" fill="#01B1AF"/>
+  </g>
+  
+  <!-- Water Waves at Bottom -->
+  <path d="M0 110 Q25 100 50 110 Q75 120 100 110 Q125 100 150 110 Q175 120 200 110 L200 120 L0 120 Z" 
+        fill="#01B1AF"/>
+</svg>
