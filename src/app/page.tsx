@@ -57,13 +57,6 @@ const Header = () => (
           <Link href="/reviews" className="text-lg" style={{color: '#01B1AF'}} onMouseEnter={(e) => e.currentTarget.style.color = '#01B1AF'} onMouseLeave={(e) => e.currentTarget.style.color = '#01B1AF'}>REVIEWS</Link>
           <a href="tel:302-998-0938" className="text-lg" style={{color: '#01B1AF'}} onMouseEnter={(e) => e.currentTarget.style.color = '#01B1AF'} onMouseLeave={(e) => e.currentTarget.style.color = '#01B1AF'}>CONTACT US</a>
         </nav>
-        
-        <button className="md:hidden">
-          {/* Hamburger menu icon would go here */}
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
       </div>
     </div>
   </header>
@@ -292,7 +285,7 @@ const HeroSection = () => {
           </div>
         </div>
         <p className="text-lg md:text-2xl mb-6">
-          The Plumbing Company, your leading Delaware Plumbing Company!
+          Father and son owned owned and operated, celebrating 25 years in business!
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
           <a 
@@ -329,44 +322,44 @@ const ImageSwiper = () => {
     {
       id: 2,
       image: "/work-pics/plumim2.png",
-      title: "Water Heater Installation",
-      description: "Professional installation of Bradford White water heater with expansion tank."
+      title: "Sump Pump Installation",
+      description: "Professional installation of sump pump with PVC piping and electrical connections."
     },
     {
       id: 3,
       image: "/work-pics/plumim3.png",
-      title: "Toilet Installation",
-      description: "Proper toilet flange preparation with new wax ring for leak-free installation."
+      title: "Water Heater Installation",
+      description: "Professional installation of Bradford White water heater with expansion tank."
     },
     {
       id: 4,
       image: "/work-pics/plumim4.png",
-      title: "Sump Pump System",
-      description: "Complete sump pump installation with PVC piping and electrical connections."
+      title: "Toilet Installation",
+      description: "Proper toilet flange preparation with new wax ring for leak-free installation."
     },
     {
       id: 5,
       image: "/work-pics/plumim5.png",
-      title: "Tankless Water Heater",
-      description: "Professional Rinnai tankless water heater with copper piping and expansion tank."
+      title: "Bathroom fixtures",
+      description: "Professional bathroom fixtures and fittings."
     },
     {
       id: 6,
       image: "/work-pics/plumim6.png",
-      title: "Plumbing Fixtures",
-      description: "Quality chrome fixtures and shut-off valves for reliable water control."
-    },
-    {
-      id: 7,
-      image: "/work-pics/plumim7.png",
       title: "Drain Systems",
       description: "Professional PVC drain systems with proper P-traps and connections."
     },
     {
+      id: 7,
+      image: "/work-pics/plumim7.png",
+      title: "Plumbing Fixtures",
+      description: "Quality chrome fixtures and shut-off valves for reliable water control."
+    },
+    {
       id: 8,
       image: "/work-pics/plumim8.png",
-      title: "Bathroom Fixtures",
-      description: "Modern bathroom installations with quality chrome fixtures and fittings."
+      title: "Tankless Water Heater",
+      description: "Professional Rinnai tankless water heater with copper piping and expansion tank."
     }
   ];
 
@@ -974,6 +967,8 @@ const ServicesListSection = () => (
             <li>Affordable Pricing</li>
             <li>Experienced & Certified Plumbers</li>
             <li>Customer Satisfaction Guaranteed</li>
+            <li>Father and son owned and operated</li>
+            <li>No job too small</li>
           </ul>
         </div>
       </div>

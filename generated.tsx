@@ -93,7 +93,7 @@ const HeroSection = () => (
           </div>
         </div>
       <p className="text-lg md:text-2xl mb-6">
-        The Plumbing Company, your leading New Castle County Plumbing Company!
+      Father and son owned owned and operated, celebrating 25 years in business!
       </p>
               <button className="text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors duration-300" style={{backgroundColor: '#0A605B'}} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0A605B'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#0A605B'}>
         Request an Appointment Today

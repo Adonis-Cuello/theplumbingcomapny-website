@@ -42,11 +42,6 @@ const Header = () => (
                   <a href="tel:302-998-0938" className="text-lg" style={{color: '#01B1AF'}} onMouseEnter={(e) => e.currentTarget.style.color = '#01B1AF'} onMouseLeave={(e) => e.currentTarget.style.color = '#01B1AF'}>CONTACT US</a>
         
       </nav>
-      <button className="md:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
     </div>
   </header>
 );
