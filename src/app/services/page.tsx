@@ -1,51 +1,7 @@
 'use client';
 
 import { Phone, Clock, MapPin, Facebook, Twitter, Linkedin, Star } from 'lucide-react';
-
-// COMPONENT_START: Header
-const Header = () => (
-  <header className="bg-white">
-    {/* Top Bar */}
-    <div className="text-white py-4 px-4 md:px-8" style={{backgroundColor: '#01B1AF'}}>
-      <div className="container mx-auto flex flex-col md:flex-row justify-center items-center text-base">
-        <div className="flex flex-col md:flex-row gap-3 md:gap-10">
-          <div className="flex items-center gap-3">
-            <Phone size={18} style={{color: '#09B1AF'}} />
-            <a href="tel:302-998-0938" className="hover:underline text-lg">(302) 998-0938</a>
-          </div>
-          <div className="flex items-center gap-3">
-            <Clock size={18} style={{color: '#01B1AF'}} />
-            <span className="text-lg">MON-FRI 9:00AM - 4:00PM</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <MapPin size={18} style={{color: '#01B1AF'}} />
-            <span className="text-lg">SERVING NEW CASTLE COUNTY</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    {/* Main Navigation */}
-          <div className="container mx-auto p-6 flex justify-between items-center">
-        <div className="flex items-center">
-          <div className="flex items-center">
-            <h1 className="text-4xl caslon-bold-italic text-gray-800">
-              <span style={{color: '#0A605B', textShadow: '1px 1px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000'}}>THE</span> PLUMBING <span style={{color: '#0A605B', textShadow: '1px 1px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000'}}>COMPANY</span>
-            </h1>
-          </div>
-        </div>
-      <nav className="hidden md:flex gap-8 items-center font-semibold text-gray-700">
-                  <a href="/" className="text-lg" style={{color: '#01B1AF'}} onMouseEnter={(e) => e.currentTarget.style.color = '#01B1AF'} onMouseLeave={(e) => e.currentTarget.style.color = '#01B1AF'}>HOME</a>
-                  <a href="/services" className="text-lg" style={{color: '#01B1AF'}} onMouseEnter={(e) => e.currentTarget.style.color = '#01B1AF'} onMouseLeave={(e) => e.currentTarget.style.color = '#01B1AF'}>SERVICES</a>
-                  <a href="/#about" className="text-lg" style={{color: '#01B1AF'}} onMouseEnter={(e) => e.currentTarget.style.color = '#01B1AF'} onMouseLeave={(e) => e.currentTarget.style.color = '#01B1AF'}>ABOUT US</a>
-                  <a href="/reviews" className="text-lg" style={{color: '#01B1AF'}} onMouseEnter={(e) => e.currentTarget.style.color = '#01B1AF'} onMouseLeave={(e) => e.currentTarget.style.color = '#01B1AF'}>REVIEWS</a>
-                  <a href="tel:302-998-0938" className="text-lg" style={{color: '#01B1AF'}} onMouseEnter={(e) => e.currentTarget.style.color = '#01B1AF'} onMouseLeave={(e) => e.currentTarget.style.color = '#01B1AF'}>CONTACT US</a>
-        
-      </nav>
-    </div>
-  </header>
-);
-// COMPONENT_END: Header
+import Header from '../../components/Header';
 
 // COMPONENT_START: ServicesHero
 const ServicesHero = () => (

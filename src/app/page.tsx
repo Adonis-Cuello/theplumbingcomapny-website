@@ -3,6 +3,7 @@
 // IMPORTS_START
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Header from '../components/Header';
 import {
   Phone,
   Clock,
@@ -15,53 +16,6 @@ import {
   Zap,
 } from 'lucide-react';
 // IMPORTS_END
-
-// COMPONENT_START: Header
-const Header = () => (
-  <header className="bg-white">
-    {/* Top Bar */}
-    <div className="text-white py-4 px-4 md:px-8" style={{backgroundColor: '#01B1AF'}}>
-      <div className="container mx-auto flex flex-col md:flex-row justify-center items-center text-base top-bar-content">
-        <div className="flex flex-col md:flex-row gap-3 md:gap-10">
-          <div className="flex items-center gap-3 top-bar-item">
-            <a href="tel:302-998-0938" className="hover:underline text-lg flex items-center gap-2">
-              <Phone size={16} style={{color: '#ffffff'}} />
-              (302) 998-0938
-            </a>
-          </div>
-          <div className="flex items-center gap-3 top-bar-item">
-            <Clock size={18} style={{color: '#01B1AF'}} />
-            <span className="text-lg">MON-FRI 9:00AM - 4:00PM</span>
-          </div>
-          <div className="flex items-center gap-3 top-bar-item">
-            <MapPin size={18} style={{color: '#01B1AF'}} />
-            <span className="text-lg">SERVING NEW CASTLE COUNTY</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    {/* Main Navigation */}
-    <div className="container mx-auto p-6 flex justify-between items-center">
-      <div className="flex items-center">
-        <h1 className="text-4xl caslon-bold-italic" style={{outline: 'none', border: 'none', boxShadow: 'none', color: '#01B1AF'}}>
-          THE PLUMBING COMPANY
-        </h1>
-      </div>
-      
-      <div className="flex items-center gap-4">
-        <nav className="hidden md:flex gap-8 items-center font-semibold text-gray-700">
-          <Link href="/" className="text-lg" style={{color: '#01B1AF'}} onMouseEnter={(e) => e.currentTarget.style.color = '#01B1AF'} onMouseLeave={(e) => e.currentTarget.style.color = '#01B1AF'}>HOME</Link>
-          <Link href="/services" className="text-lg" style={{color: '#01B1AF'}} onMouseEnter={(e) => e.currentTarget.style.color = '#01B1AF'} onMouseLeave={(e) => e.currentTarget.style.color = '#01B1AF'}>SERVICES</Link>
-          <a href="#about" className="text-lg" style={{color: '#01B1AF'}} onMouseEnter={(e) => e.currentTarget.style.color = '#01B1AF'} onMouseLeave={(e) => e.currentTarget.style.color = '#01B1AF'}>ABOUT US</a>
-          <Link href="/reviews" className="text-lg" style={{color: '#01B1AF'}} onMouseEnter={(e) => e.currentTarget.style.color = '#01B1AF'} onMouseLeave={(e) => e.currentTarget.style.color = '#01B1AF'}>REVIEWS</Link>
-          <a href="tel:302-998-0938" className="text-lg" style={{color: '#01B1AF'}} onMouseEnter={(e) => e.currentTarget.style.color = '#01B1AF'} onMouseLeave={(e) => e.currentTarget.style.color = '#01B1AF'}>CONTACT US</a>
-        </nav>
-      </div>
-    </div>
-  </header>
-);
-// COMPONENT_END: Header
 
 // COMPONENT_START: AppointmentModal
 const AppointmentModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
