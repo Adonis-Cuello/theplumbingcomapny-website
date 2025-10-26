@@ -6,8 +6,6 @@ import Link from 'next/link';
 import Header from '../components/Header';
 import {
   Phone,
-  Clock,
-  MapPin,
   Facebook,
   Star,
   Droplets,

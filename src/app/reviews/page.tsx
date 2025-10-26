@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Phone, Clock, MapPin, Facebook, Star } from 'lucide-react';
+import { Phone, Facebook, Star } from 'lucide-react';
 import Header from '../../components/Header';
 
 // COMPONENT_START: ReviewsHero
