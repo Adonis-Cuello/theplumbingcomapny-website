@@ -237,7 +237,7 @@ const HeroSection = () => {
           </div>
         </div>
         <p className="text-lg md:text-2xl mb-6">
-          Father and son owned owned and operated, celebrating 25 years in business!
+          Father and son owned and operated, celebrating 25 years in business!
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
           <a 
